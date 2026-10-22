@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import random
+
 from pv_physics import cell_parameters, section_voltage
 
 
@@ -49,7 +51,7 @@ def _knee_guesses(payload, count):
 
 
 def _refine(payload, start):
-    levels = sorted(max(1.0, min(1300.0, float(value))) for value in start)
+    levels = sorted(max(1.0, min(3500.0, float(value))) for value in start)
     best_error = _sse(payload, levels)
     for step in (200.0, 50.0, 10.0, 2.0, 1.0):
         for _pass in range(2):
@@ -58,7 +60,7 @@ def _refine(payload, start):
                 best_value = center
                 best_local = best_error
                 for offset in range(-5, 6):
-                    value = max(1.0, min(1300.0, center + offset * step))
+                    value = max(1.0, min(3500.0, center + offset * step))
                     trial = levels[:]
                     trial[index] = value
                     error = _sse(payload, trial)
@@ -70,6 +72,61 @@ def _refine(payload, start):
             levels.sort()
     return levels, best_error
 
+
+
+def _subset(payload, target=35):
+    sweep = payload["sweep"]
+    if len(sweep) <= target:
+        return sweep
+    indices = {round(index * (len(sweep) - 1) / (target - 1)) for index in range(target)}
+    return [sweep[index] for index in sorted(indices)]
+
+
+def _subset_error(payload, points, levels):
+    total = 0.0
+    for point in points:
+        predicted = 0.0
+        for section, level in zip(payload["sections"], levels):
+            voltage, _ = section_voltage(
+                section,
+                payload["cell"],
+                payload["temperature_c"],
+                payload["bypass_forward_v"],
+                float(point["current_a"]),
+                level,
+            )
+            predicted += voltage
+        total += (predicted - float(point["voltage_v"])) ** 2
+    return total
+
+
+def _differential_start(payload, seed):
+    count = len(payload["sections"])
+    points = _subset(payload)
+    rnd = random.Random(seed)
+    population = [[rnd.uniform(0.0, 3000.0) for _ in range(count)] for _ in range(36)]
+    fitness = [_subset_error(payload, points, item) for item in population]
+    best = min(zip(fitness, population), key=lambda item: item[0])
+    for _iteration in range(220):
+        for index in range(len(population)):
+            a, b, c = rnd.sample(range(len(population)), 3)
+            mutant = [
+                max(0.0, min(3500.0, population[a][j] + 0.72 * (population[b][j] - population[c][j])))
+                for j in range(count)
+            ]
+            forced = rnd.randrange(count)
+            trial = [
+                mutant[j] if rnd.random() < 0.9 or j == forced else population[index][j]
+                for j in range(count)
+            ]
+            trial.sort()
+            value = _subset_error(payload, points, trial)
+            if value < fitness[index]:
+                population[index] = trial
+                fitness[index] = value
+                if value < best[0]:
+                    best = (value, trial[:])
+    return best[1]
 
 def estimate(payload):
     count = len(payload["sections"])
@@ -89,4 +146,9 @@ def estimate(payload):
         levels, error = _refine(payload, start)
         if best_error is None or error < best_error:
             best_levels, best_error = levels, error
+    if best_error is None or best_error > 1e-4:
+        for seed in (1, 7, 19):
+            levels, error = _refine(payload, _differential_start(payload, seed))
+            if best_error is None or error < best_error:
+                best_levels, best_error = levels, error
     return [int(round(value)) for value in sorted(best_levels)]
