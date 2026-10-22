@@ -1,5 +1,6 @@
 {
   "kind": "mpp",
+  "current_limit_a": 3.8,
   "strings": [
     {
       "id": "A",

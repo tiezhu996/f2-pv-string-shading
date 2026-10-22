@@ -13,6 +13,6 @@
     "test_outputs.py::test_alternating_dark_and_bright_levels_are_recovered": {"weight": 0.10, "rationale": "难点2 辐照度反演：明暗交替且层级多，难点合计 0.30"},
     "test_outputs.py::test_single_curve_interior_maximum": {"weight": 0.10, "rationale": "难点3 全局MPP：单曲线区间内极值，难点合计 0.30"},
     "test_outputs.py::test_parallel_misaligned_curves_share_one_voltage": {"weight": 0.10, "rationale": "难点3 全局MPP：多组串共享电压，难点合计 0.30"},
-    "test_outputs.py::test_interior_vertex_beats_all_scan_points": {"weight": 0.10, "rationale": "难点3 全局MPP：区间顶点优于扫描点，难点合计 0.30"}
+    "test_outputs.py::test_interior_vertex_beats_all_scan_points": {"weight": 0.10, "rationale": "难点3 全局MPP：区间顶点、限流边界与扫描点共同决定可行最优值，难点合计 0.30"}
   }
 }

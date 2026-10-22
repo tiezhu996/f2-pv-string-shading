@@ -80,17 +80,17 @@
   },
   "mpp-interior-vertex": {
     "exact": {
-      "voltage_v": 51.25,
-      "current_a": 4.1,
-      "power_w": 210.125,
+      "voltage_v": 55.0,
+      "current_a": 3.8,
+      "power_w": 209.0,
       "string_currents_a": {
-        "A": 4.1
+        "A": 3.8
       }
     },
     "dense_check": {
-      "voltage_v": 51.25,
-      "current_a": 4.1,
-      "power_w": 210.12499999999997
+      "voltage_v": 55.0,
+      "current_a": 3.8,
+      "power_w": 209.0
     }
   }
 }

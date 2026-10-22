@@ -6,7 +6,7 @@
 |---|---|---|---|
 | difficulty_1 | 只按正面辐照度判断组端状态 | 双面组件的有效辐照度包含背板贡献；温度修正后的光生电流决定旁路边界 | test_bifacial_gain_changes_bypass_state、test_temperature_corrected_current_at_knee、test_hot_module_boundary_uses_isc_coefficient |
 | difficulty_2 | 把参考辐照度当成每个旁路区的辐照度 | 整串 V-I 曲线是各区伏安特性之和，需要从曲线膝点反演各区辐照度 | test_three_irradiance_levels_are_recovered、test_close_levels_near_bypass_knees_are_resolved、test_alternating_dark_and_bright_levels_are_recovered |
-| difficulty_3 | 只在输入折线的采样点比较功率 | 并联后各段电流随电压线性变化，功率在段内是二次函数，全局极值可能在段内 | test_single_curve_interior_maximum、test_parallel_misaligned_curves_share_one_voltage、test_interior_vertex_beats_all_scan_points |
+| difficulty_3 | 只在输入折线的采样点比较功率，并忽略逆变器限流 | 并联后各段电流随电压线性变化，功率在段内是二次函数；可行域还受电流上限约束 | test_single_curve_interior_maximum、test_parallel_misaligned_curves_share_one_voltage、test_interior_vertex_beats_all_scan_points |
 
 ## 参考解文件
 
@@ -22,7 +22,7 @@
 2. 有效辐照度为 `front + bifaciality * rear`；光生电流与有效辐照度成正比。
 3. 单区有效电压低于旁路压降或电流达到光生电流时，区电压钳位到 `-bypass_forward_v`。
 4. 整串电压为各区电压之和。扫描曲线膝点对应各区的光生电流，把差分膝点与多组确定性初值送入全曲线残差细化，保留重复层和相邻层。
-5. 并联曲线在每个电压断点处各自线性插值并求和。每段的总电流随电压线性变化，对 `P = V*I(V)` 求段内驻点，与全部断点比较后取全局最大值。
+5. 并联曲线在每个电压断点处各自线性插值并求和。每段的总电流随电压线性变化，对 `P = V*I(V)` 求段内驻点；有 `current_limit_a` 时再加入总电流等于上限的交点，过滤不可行点后取全局最大值。
 
 ## 核心公式与独立复算
 

@@ -17,6 +17,8 @@ def _interp(curve, voltage):
 
 def global_mpp(payload):
     strings = payload["strings"]
+    current_limit = payload.get("current_limit_a")
+    current_limit = None if current_limit is None else float(current_limit)
     voltages = sorted({float(p["voltage_v"]) for string in strings for p in string["curve"]})
 
     def currents(voltage):
@@ -25,22 +27,38 @@ def global_mpp(payload):
     def total_current(voltage):
         return sum(currents(voltage).values())
 
-    best_voltage = voltages[0]
-    best_power = best_voltage * total_current(best_voltage)
+    best_voltage = None
+    best_power = None
+
+    def consider(voltage, current=None):
+        nonlocal best_voltage, best_power
+        if current is None:
+            current = total_current(voltage)
+        if current_limit is not None and current > current_limit + 1e-9:
+            return
+        power = voltage * current
+        if best_power is None or power > best_power:
+            best_voltage, best_power = voltage, power
+
+    for voltage in voltages:
+        consider(voltage)
+
     for v0, v1 in zip(voltages, voltages[1:]):
         i0 = total_current(v0)
         i1 = total_current(v1)
         slope = (i1 - i0) / (v1 - v0)
+        intercept = i0 - slope * v0
         candidates = [v0, v1]
         if slope < 0.0:
-            intercept = i0 - slope * v0
             vertex = -intercept / (2.0 * slope)
             if v0 < vertex < v1:
                 candidates.append(vertex)
+            if current_limit is not None:
+                crossing = (current_limit - intercept) / slope
+                if v0 < crossing < v1:
+                    candidates.append(crossing)
         for voltage in candidates:
-            power = voltage * total_current(voltage)
-            if power > best_power:
-                best_voltage, best_power = voltage, power
+            consider(voltage)
 
     output_currents = currents(best_voltage)
     return {

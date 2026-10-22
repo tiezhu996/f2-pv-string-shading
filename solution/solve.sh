@@ -24,12 +24,14 @@ REVERT = {
     ),
     "difficulty_3": (
         "mpp.py",
-        '''        if slope < 0.0:
-            intercept = i0 - slope * v0
-            vertex = -intercept / (2.0 * slope)
-            if v0 < vertex < v1:
-                candidates.append(vertex)
-''',
+        '        if slope < 0.0:\n'
+        '            vertex = -intercept / (2.0 * slope)\n'
+        '            if v0 < vertex < v1:\n'
+        '                candidates.append(vertex)\n'
+        '            if current_limit is not None:\n'
+        '                crossing = (current_limit - intercept) / slope\n'
+        '                if v0 < crossing < v1:\n'
+        '                    candidates.append(crossing)\n',
         "",
     ),
 }
