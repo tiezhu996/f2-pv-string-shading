@@ -1,0 +1,102 @@
+{
+  "bypass-basic": {
+    "bypassed_section_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ]
+  },
+  "bypass-knee": {
+    "bypassed_section_ids": [
+      "B3"
+    ]
+  },
+  "bypass-hot": {
+    "bypassed_section_ids": [
+      "B2",
+      "B3"
+    ]
+  },
+  "irr-three-levels": {
+    "irradiance_levels_w_m2": [
+      310,
+      325,
+      340,
+      640,
+      655,
+      670,
+      970,
+      985,
+      1000
+    ]
+  },
+  "irr-near-knees": {
+    "irradiance_levels_w_m2": [
+      690,
+      695,
+      700,
+      720,
+      725,
+      730
+    ]
+  },
+  "irr-mixed": {
+    "irradiance_levels_w_m2": [
+      450,
+      460,
+      470,
+      480,
+      1000,
+      1010,
+      1020,
+      1030,
+      1040
+    ]
+  },
+  "mpp-single-shaded": {
+    "exact": {
+      "voltage_v": 61.571,
+      "current_a": 4.789,
+      "power_w": 294.859,
+      "string_currents_a": {
+        "A": 4.789
+      }
+    },
+    "dense_check": {
+      "voltage_v": 61.571,
+      "current_a": 4.788922222222222,
+      "power_w": 294.85873014444445
+    }
+  },
+  "mpp-parallel-misaligned": {
+    "exact": {
+      "voltage_v": 60.19,
+      "current_a": 9.697,
+      "power_w": 583.672,
+      "string_currents_a": {
+        "A": 4.896,
+        "B": 4.801
+      }
+    },
+    "dense_check": {
+      "voltage_v": 60.19,
+      "current_a": 9.697166666666668,
+      "power_w": 583.6724616666667
+    }
+  },
+  "mpp-interior-vertex": {
+    "exact": {
+      "voltage_v": 51.25,
+      "current_a": 4.1,
+      "power_w": 210.125,
+      "string_currents_a": {
+        "A": 4.1
+      }
+    },
+    "dense_check": {
+      "voltage_v": 51.25,
+      "current_a": 4.1,
+      "power_w": 210.12499999999997
+    }
+  }
+}

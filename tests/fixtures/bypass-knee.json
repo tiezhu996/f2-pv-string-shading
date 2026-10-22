@@ -1,0 +1,53 @@
+{
+  "kind": "bypass",
+  "temperature_c": 44.0,
+  "current_a": 8.85,
+  "cell": {
+    "isc_stc_a": 9.55,
+    "voc_stc_v": 0.688,
+    "alpha_isc_pct_per_c": 0.048,
+    "beta_voc_pct_per_c": -0.272,
+    "ideality_factor": 1.12,
+    "series_ohm": 0.0028,
+    "bifaciality_factor": 0.7
+  },
+  "bypass_forward_v": 0.72,
+  "sections": [
+    {
+      "id": "A1",
+      "cells": 20,
+      "front_irradiance_w_m2": 980,
+      "rear_irradiance_w_m2": 20
+    },
+    {
+      "id": "A2",
+      "cells": 22,
+      "front_irradiance_w_m2": 975,
+      "rear_irradiance_w_m2": 15
+    },
+    {
+      "id": "A3",
+      "cells": 18,
+      "front_irradiance_w_m2": 970,
+      "rear_irradiance_w_m2": 10
+    },
+    {
+      "id": "B1",
+      "cells": 20,
+      "front_irradiance_w_m2": 800,
+      "rear_irradiance_w_m2": 200
+    },
+    {
+      "id": "B2",
+      "cells": 22,
+      "front_irradiance_w_m2": 800,
+      "rear_irradiance_w_m2": 200
+    },
+    {
+      "id": "B3",
+      "cells": 18,
+      "front_irradiance_w_m2": 900,
+      "rear_irradiance_w_m2": 10
+    }
+  ]
+}

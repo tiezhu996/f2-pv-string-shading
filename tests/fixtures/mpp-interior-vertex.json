@@ -1,0 +1,34 @@
+{
+  "kind": "mpp",
+  "strings": [
+    {
+      "id": "A",
+      "curve": [
+        {
+          "voltage_v": 0,
+          "current_a": 7.2
+        },
+        {
+          "voltage_v": 10,
+          "current_a": 7.0
+        },
+        {
+          "voltage_v": 40,
+          "current_a": 5.0
+        },
+        {
+          "voltage_v": 60,
+          "current_a": 3.4
+        },
+        {
+          "voltage_v": 70,
+          "current_a": 0.5
+        },
+        {
+          "voltage_v": 79,
+          "current_a": 0.0
+        }
+      ]
+    }
+  ]
+}
