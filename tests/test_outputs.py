@@ -86,13 +86,13 @@ def assert_mpp_close(got, expected):
 # ---------- gate: entry contract, not scored ----------
 
 def test_prints_one_json_object():
-    """「程序只向标准输出写一个 JSON 对象」"""
+    """「处理规则见 `/app/SPEC.md`」"""
     got = run_fixture("bypass-basic")
     assert isinstance(got, dict)
 
 
 def test_unknown_kind_or_missing_argument_exits_2():
-    """「未知计算类型或参数个数不对时，退出码为 2」"""
+    """「参数缺失或 kind 不识别时返回 2」"""
     missing = run_candidate()
     unknown = run_payload({"kind": "unknown"})
     assert missing.returncode == 2
@@ -104,19 +104,19 @@ def test_unknown_kind_or_missing_argument_exits_2():
 # ---------- difficulty 1: bypass state ----------
 
 def test_bifacial_gain_changes_bypass_state():
-    """「旁路状态按当前电流与各区有效辐照度计算」"""
+    """「把 `/app/main.py` 改到能按那份交接单出结果」"""
     got = run_fixture("bypass-basic")
     assert got["bypassed_section_ids"] == EXPECTED["bypass-basic"]["bypassed_section_ids"]
 
 
 def test_temperature_corrected_current_at_knee():
-    """「旁路状态按当前电流与各区有效辐照度计算」"""
+    """「把 `/app/main.py` 改到能按那份交接单出结果」"""
     got = run_fixture("bypass-knee")
     assert got["bypassed_section_ids"] == EXPECTED["bypass-knee"]["bypassed_section_ids"]
 
 
 def test_hot_module_boundary_uses_isc_coefficient():
-    """「旁路状态按当前电流与各区有效辐照度计算」"""
+    """「把 `/app/main.py` 改到能按那份交接单出结果」"""
     got = run_fixture("bypass-hot")
     assert got["bypassed_section_ids"] == EXPECTED["bypass-hot"]["bypassed_section_ids"]
 
@@ -124,19 +124,19 @@ def test_hot_module_boundary_uses_isc_coefficient():
 # ---------- difficulty 2: irradiance inversion ----------
 
 def test_three_irradiance_levels_are_recovered():
-    """「各区有效辐照度按升序输出为整数」"""
+    """「处理规则见 `/app/SPEC.md`」"""
     got = run_fixture("irr-three-levels")["irradiance_levels_w_m2"]
     assert_levels_close(got, EXPECTED["irr-three-levels"]["irradiance_levels_w_m2"])
 
 
 def test_close_levels_near_bypass_knees_are_resolved():
-    """「各区有效辐照度按升序输出为整数」"""
+    """「处理规则见 `/app/SPEC.md`」"""
     got = run_fixture("irr-near-knees")["irradiance_levels_w_m2"]
     assert_levels_close(got, EXPECTED["irr-near-knees"]["irradiance_levels_w_m2"])
 
 
 def test_alternating_dark_and_bright_levels_are_recovered():
-    """「各区有效辐照度按升序输出为整数」"""
+    """「处理规则见 `/app/SPEC.md`」"""
     got = run_fixture("irr-mixed")["irradiance_levels_w_m2"]
     assert_levels_close(got, EXPECTED["irr-mixed"]["irradiance_levels_w_m2"])
 
@@ -144,18 +144,18 @@ def test_alternating_dark_and_bright_levels_are_recovered():
 # ---------- difficulty 3: global MPP ----------
 
 def test_single_curve_interior_maximum():
-    """「组合曲线的全局最大功率点可能落在两个扫描点之间」"""
+    """「把 `/app/main.py` 改到能按那份交接单出结果」"""
     got = run_fixture("mpp-single-shaded")
     assert_mpp_close(got, EXPECTED["mpp-single-shaded"]["exact"])
 
 
 def test_parallel_misaligned_curves_share_one_voltage():
-    """「多条组串并联时必须使用同一个工作电压」"""
+    """「处理规则见 `/app/SPEC.md`」"""
     got = run_fixture("mpp-parallel-misaligned")
     assert_mpp_close(got, EXPECTED["mpp-parallel-misaligned"]["exact"])
 
 
 def test_interior_vertex_beats_all_scan_points():
-    """「组合曲线的全局最大功率点可能落在两个扫描点之间」"""
+    """「把 `/app/main.py` 改到能按那份交接单出结果」"""
     got = run_fixture("mpp-interior-vertex")
     assert_mpp_close(got, EXPECTED["mpp-interior-vertex"]["exact"])
