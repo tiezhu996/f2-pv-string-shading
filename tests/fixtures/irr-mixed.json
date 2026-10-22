@@ -35,1225 +35,1213 @@
     {
       "id": "S06",
       "cells": 20
-    },
-    {
-      "id": "S07",
-      "cells": 20
-    },
-    {
-      "id": "S08",
-      "cells": 20
-    },
-    {
-      "id": "S09",
-      "cells": 20
     }
   ],
   "sweep": [
     {
       "current_a": 0.0,
-      "voltage_v": 111.1702
+      "voltage_v": 73.72928
     },
     {
       "current_a": 0.033898,
-      "voltage_v": 111.11891
+      "voltage_v": 73.69247
     },
     {
       "current_a": 0.067796,
-      "voltage_v": 111.06743
+      "voltage_v": 73.65549
     },
     {
       "current_a": 0.101694,
-      "voltage_v": 111.01575
+      "voltage_v": 73.61834
     },
     {
       "current_a": 0.135592,
-      "voltage_v": 110.96386
+      "voltage_v": 73.58101
     },
     {
       "current_a": 0.16949,
-      "voltage_v": 110.91176
+      "voltage_v": 73.5435
     },
     {
       "current_a": 0.203388,
-      "voltage_v": 110.85945
+      "voltage_v": 73.5058
     },
     {
       "current_a": 0.237286,
-      "voltage_v": 110.80692
+      "voltage_v": 73.46792
     },
     {
       "current_a": 0.271184,
-      "voltage_v": 110.75418
+      "voltage_v": 73.42986
     },
     {
       "current_a": 0.305082,
-      "voltage_v": 110.70122
+      "voltage_v": 73.3916
     },
     {
       "current_a": 0.33898,
-      "voltage_v": 110.64803
+      "voltage_v": 73.35315
     },
     {
       "current_a": 0.372878,
-      "voltage_v": 110.59462
+      "voltage_v": 73.31449
     },
     {
       "current_a": 0.406776,
-      "voltage_v": 110.54097
+      "voltage_v": 73.27564
     },
     {
       "current_a": 0.440674,
-      "voltage_v": 110.4871
+      "voltage_v": 73.23658
     },
     {
       "current_a": 0.474572,
-      "voltage_v": 110.43298
+      "voltage_v": 73.19731
     },
     {
       "current_a": 0.50847,
-      "voltage_v": 110.37862
+      "voltage_v": 73.15783
     },
     {
       "current_a": 0.542368,
-      "voltage_v": 110.32402
+      "voltage_v": 73.11813
     },
     {
       "current_a": 0.576266,
-      "voltage_v": 110.26918
+      "voltage_v": 73.07822
     },
     {
       "current_a": 0.610164,
-      "voltage_v": 110.21407
+      "voltage_v": 73.03807
     },
     {
       "current_a": 0.644062,
-      "voltage_v": 110.15872
+      "voltage_v": 72.9977
     },
     {
       "current_a": 0.677961,
-      "voltage_v": 110.1031
+      "voltage_v": 72.9571
     },
     {
       "current_a": 0.711859,
-      "voltage_v": 110.04721
+      "voltage_v": 72.91626
     },
     {
       "current_a": 0.745757,
-      "voltage_v": 109.99106
+      "voltage_v": 72.87518
     },
     {
       "current_a": 0.779655,
-      "voltage_v": 109.93464
+      "voltage_v": 72.83385
     },
     {
       "current_a": 0.813553,
-      "voltage_v": 109.87793
+      "voltage_v": 72.79227
     },
     {
       "current_a": 0.847451,
-      "voltage_v": 109.82095
+      "voltage_v": 72.75043
     },
     {
       "current_a": 0.881349,
-      "voltage_v": 109.76367
+      "voltage_v": 72.70834
     },
     {
       "current_a": 0.915247,
-      "voltage_v": 109.70611
+      "voltage_v": 72.66597
     },
     {
       "current_a": 0.949145,
-      "voltage_v": 109.64824
+      "voltage_v": 72.62334
     },
     {
       "current_a": 0.983043,
-      "voltage_v": 109.59008
+      "voltage_v": 72.58042
     },
     {
       "current_a": 1.016941,
-      "voltage_v": 109.5316
+      "voltage_v": 72.53722
     },
     {
       "current_a": 1.050839,
-      "voltage_v": 109.47281
+      "voltage_v": 72.49374
     },
     {
       "current_a": 1.084737,
-      "voltage_v": 109.4137
+      "voltage_v": 72.44995
     },
     {
       "current_a": 1.118635,
-      "voltage_v": 109.35427
+      "voltage_v": 72.40587
     },
     {
       "current_a": 1.152533,
-      "voltage_v": 109.29451
+      "voltage_v": 72.36147
     },
     {
       "current_a": 1.186431,
-      "voltage_v": 109.23441
+      "voltage_v": 72.31676
     },
     {
       "current_a": 1.220329,
-      "voltage_v": 109.17396
+      "voltage_v": 72.27173
     },
     {
       "current_a": 1.254227,
-      "voltage_v": 109.11317
+      "voltage_v": 72.22637
     },
     {
       "current_a": 1.288125,
-      "voltage_v": 109.05201
+      "voltage_v": 72.18067
     },
     {
       "current_a": 1.322023,
-      "voltage_v": 108.9905
+      "voltage_v": 72.13462
     },
     {
       "current_a": 1.355921,
-      "voltage_v": 108.92861
+      "voltage_v": 72.08822
     },
     {
       "current_a": 1.389819,
-      "voltage_v": 108.86634
+      "voltage_v": 72.04145
     },
     {
       "current_a": 1.423717,
-      "voltage_v": 108.80369
+      "voltage_v": 71.99432
     },
     {
       "current_a": 1.457615,
-      "voltage_v": 108.74064
+      "voltage_v": 71.9468
     },
     {
       "current_a": 1.491513,
-      "voltage_v": 108.6772
+      "voltage_v": 71.89889
     },
     {
       "current_a": 1.525411,
-      "voltage_v": 108.61334
+      "voltage_v": 71.85058
     },
     {
       "current_a": 1.559309,
-      "voltage_v": 108.54906
+      "voltage_v": 71.80187
     },
     {
       "current_a": 1.593207,
-      "voltage_v": 108.48435
+      "voltage_v": 71.75272
     },
     {
       "current_a": 1.627105,
-      "voltage_v": 108.4192
+      "voltage_v": 71.70315
     },
     {
       "current_a": 1.661003,
-      "voltage_v": 108.35361
+      "voltage_v": 71.65313
     },
     {
       "current_a": 1.694901,
-      "voltage_v": 108.28756
+      "voltage_v": 71.60266
     },
     {
       "current_a": 1.728799,
-      "voltage_v": 108.22104
+      "voltage_v": 71.55171
     },
     {
       "current_a": 1.762697,
-      "voltage_v": 108.15404
+      "voltage_v": 71.50028
     },
     {
       "current_a": 1.796595,
-      "voltage_v": 108.08655
+      "voltage_v": 71.44835
     },
     {
       "current_a": 1.830493,
-      "voltage_v": 108.01856
+      "voltage_v": 71.39591
     },
     {
       "current_a": 1.864391,
-      "voltage_v": 107.95006
+      "voltage_v": 71.34295
     },
     {
       "current_a": 1.898289,
-      "voltage_v": 107.88103
+      "voltage_v": 71.28944
     },
     {
       "current_a": 1.932187,
-      "voltage_v": 107.81146
+      "voltage_v": 71.23537
     },
     {
       "current_a": 1.966085,
-      "voltage_v": 107.74134
+      "voltage_v": 71.18072
     },
     {
       "current_a": 1.999983,
-      "voltage_v": 107.67065
+      "voltage_v": 71.12548
     },
     {
       "current_a": 2.033882,
-      "voltage_v": 107.59938
+      "voltage_v": 71.06962
     },
     {
       "current_a": 2.06778,
-      "voltage_v": 107.52752
+      "voltage_v": 71.01312
     },
     {
       "current_a": 2.101678,
-      "voltage_v": 107.45504
+      "voltage_v": 70.95596
     },
     {
       "current_a": 2.135576,
-      "voltage_v": 107.38193
+      "voltage_v": 70.89813
     },
     {
       "current_a": 2.169474,
-      "voltage_v": 107.30818
+      "voltage_v": 70.83959
     },
     {
       "current_a": 2.203372,
-      "voltage_v": 107.23376
+      "voltage_v": 70.78032
     },
     {
       "current_a": 2.23727,
-      "voltage_v": 107.15866
+      "voltage_v": 70.72029
     },
     {
       "current_a": 2.271168,
-      "voltage_v": 107.08286
+      "voltage_v": 70.65947
     },
     {
       "current_a": 2.305066,
-      "voltage_v": 107.00634
+      "voltage_v": 70.59784
     },
     {
       "current_a": 2.338964,
-      "voltage_v": 106.92907
+      "voltage_v": 70.53536
     },
     {
       "current_a": 2.372862,
-      "voltage_v": 106.85103
+      "voltage_v": 70.472
     },
     {
       "current_a": 2.40676,
-      "voltage_v": 106.7722
+      "voltage_v": 70.40773
     },
     {
       "current_a": 2.440658,
-      "voltage_v": 106.69256
+      "voltage_v": 70.34249
     },
     {
       "current_a": 2.474556,
-      "voltage_v": 106.61208
+      "voltage_v": 70.27626
     },
     {
       "current_a": 2.508454,
-      "voltage_v": 106.53072
+      "voltage_v": 70.20899
     },
     {
       "current_a": 2.542352,
-      "voltage_v": 106.44847
+      "voltage_v": 70.14063
     },
     {
       "current_a": 2.57625,
-      "voltage_v": 106.36529
+      "voltage_v": 70.07113
     },
     {
       "current_a": 2.610148,
-      "voltage_v": 106.28114
+      "voltage_v": 70.00044
     },
     {
       "current_a": 2.644046,
-      "voltage_v": 106.19601
+      "voltage_v": 69.9285
     },
     {
       "current_a": 2.677944,
-      "voltage_v": 106.10984
+      "voltage_v": 69.85524
     },
     {
       "current_a": 2.711842,
-      "voltage_v": 106.0226
+      "voltage_v": 69.7806
     },
     {
       "current_a": 2.74574,
-      "voltage_v": 105.93426
+      "voltage_v": 69.70451
     },
     {
       "current_a": 2.779638,
-      "voltage_v": 105.84477
+      "voltage_v": 69.62689
     },
     {
       "current_a": 2.813536,
-      "voltage_v": 105.75408
+      "voltage_v": 69.54764
     },
     {
       "current_a": 2.847434,
-      "voltage_v": 105.66214
+      "voltage_v": 69.46668
     },
     {
       "current_a": 2.881332,
-      "voltage_v": 105.56892
+      "voltage_v": 69.38391
     },
     {
       "current_a": 2.91523,
-      "voltage_v": 105.47434
+      "voltage_v": 69.2992
     },
     {
       "current_a": 2.949128,
-      "voltage_v": 105.37836
+      "voltage_v": 69.21244
     },
     {
       "current_a": 2.983026,
-      "voltage_v": 105.2809
+      "voltage_v": 69.12348
     },
     {
       "current_a": 3.016924,
-      "voltage_v": 105.18191
+      "voltage_v": 69.03219
     },
     {
       "current_a": 3.050822,
-      "voltage_v": 105.08132
+      "voltage_v": 68.93837
     },
     {
       "current_a": 3.08472,
-      "voltage_v": 104.97904
+      "voltage_v": 68.84186
     },
     {
       "current_a": 3.118618,
-      "voltage_v": 104.875
+      "voltage_v": 68.74243
     },
     {
       "current_a": 3.152516,
-      "voltage_v": 104.76911
+      "voltage_v": 68.63985
     },
     {
       "current_a": 3.186414,
-      "voltage_v": 104.66126
+      "voltage_v": 68.53384
     },
     {
       "current_a": 3.220312,
-      "voltage_v": 104.55137
+      "voltage_v": 68.4241
     },
     {
       "current_a": 3.25421,
-      "voltage_v": 104.43931
+      "voltage_v": 68.31027
     },
     {
       "current_a": 3.288108,
-      "voltage_v": 104.32496
+      "voltage_v": 68.19194
     },
     {
       "current_a": 3.322006,
-      "voltage_v": 104.20818
+      "voltage_v": 68.06862
     },
     {
       "current_a": 3.355904,
-      "voltage_v": 104.08885
+      "voltage_v": 67.93976
     },
     {
       "current_a": 3.389803,
-      "voltage_v": 103.96678
+      "voltage_v": 67.80467
     },
     {
       "current_a": 3.423701,
-      "voltage_v": 103.84181
+      "voltage_v": 67.66253
     },
     {
       "current_a": 3.457599,
-      "voltage_v": 103.71374
+      "voltage_v": 67.51236
     },
     {
       "current_a": 3.491497,
-      "voltage_v": 103.58236
+      "voltage_v": 67.35289
     },
     {
       "current_a": 3.525395,
-      "voltage_v": 103.44743
+      "voltage_v": 67.18255
     },
     {
       "current_a": 3.559293,
-      "voltage_v": 103.30867
+      "voltage_v": 66.99927
     },
     {
       "current_a": 3.593191,
-      "voltage_v": 103.1658
+      "voltage_v": 66.80025
     },
     {
       "current_a": 3.627089,
-      "voltage_v": 103.01846
+      "voltage_v": 66.58157
     },
     {
       "current_a": 3.660987,
-      "voltage_v": 102.86628
+      "voltage_v": 66.33746
     },
     {
       "current_a": 3.694885,
-      "voltage_v": 102.70883
+      "voltage_v": 66.05869
     },
     {
       "current_a": 3.728783,
-      "voltage_v": 102.54559
+      "voltage_v": 65.72894
     },
     {
       "current_a": 3.762681,
-      "voltage_v": 102.376
+      "voltage_v": 65.31394
     },
     {
       "current_a": 3.796579,
-      "voltage_v": 102.19937
+      "voltage_v": 64.71426
     },
     {
       "current_a": 3.830477,
-      "voltage_v": 102.01491
+      "voltage_v": 63.02771
     },
     {
       "current_a": 3.864375,
-      "voltage_v": 101.82169
+      "voltage_v": 55.10118
     },
     {
       "current_a": 3.898273,
-      "voltage_v": 101.61857
+      "voltage_v": 54.85235
     },
     {
       "current_a": 3.932171,
-      "voltage_v": 101.40418
+      "voltage_v": 54.54677
     },
     {
       "current_a": 3.966069,
-      "voltage_v": 101.17682
+      "voltage_v": 54.13782
     },
     {
       "current_a": 3.999967,
-      "voltage_v": 100.93435
+      "voltage_v": 53.4597
     },
     {
       "current_a": 4.033865,
-      "voltage_v": 100.67401
+      "voltage_v": 44.37075
     },
     {
       "current_a": 4.067763,
-      "voltage_v": 100.39217
+      "voltage_v": 44.21298
     },
     {
       "current_a": 4.101661,
-      "voltage_v": 100.08383
+      "voltage_v": 44.01987
     },
     {
       "current_a": 4.135559,
-      "voltage_v": 99.7418
+      "voltage_v": 43.76685
     },
     {
       "current_a": 4.169457,
-      "voltage_v": 99.35514
+      "voltage_v": 43.38892
     },
     {
       "current_a": 4.203355,
-      "voltage_v": 98.90547
+      "voltage_v": 42.56131
     },
     {
       "current_a": 4.237253,
-      "voltage_v": 98.35711
+      "voltage_v": 33.99464
     },
     {
       "current_a": 4.271151,
-      "voltage_v": 97.61847
+      "voltage_v": 33.97589
     },
     {
       "current_a": 4.305049,
-      "voltage_v": 96.14971
+      "voltage_v": 33.95706
     },
     {
       "current_a": 4.338947,
-      "voltage_v": 87.43949
+      "voltage_v": 33.93816
     },
     {
       "current_a": 4.372845,
-      "voltage_v": 86.71507
+      "voltage_v": 33.91917
     },
     {
       "current_a": 4.406743,
-      "voltage_v": 84.68826
+      "voltage_v": 33.90011
     },
     {
       "current_a": 4.440641,
-      "voltage_v": 76.76383
+      "voltage_v": 33.88097
     },
     {
       "current_a": 4.474539,
-      "voltage_v": 76.07027
+      "voltage_v": 33.86174
     },
     {
       "current_a": 4.508437,
-      "voltage_v": 66.78923
+      "voltage_v": 33.84243
     },
     {
       "current_a": 4.542335,
-      "voltage_v": 66.44902
+      "voltage_v": 33.82304
     },
     {
       "current_a": 4.576233,
-      "voltage_v": 65.84036
+      "voltage_v": 33.80356
     },
     {
       "current_a": 4.610131,
-      "voltage_v": 56.91704
+      "voltage_v": 33.78399
     },
     {
       "current_a": 4.644029,
-      "voltage_v": 56.88429
+      "voltage_v": 33.76434
     },
     {
       "current_a": 4.677927,
-      "voltage_v": 56.85139
+      "voltage_v": 33.7446
     },
     {
       "current_a": 4.711826,
-      "voltage_v": 56.81835
+      "voltage_v": 33.72477
     },
     {
       "current_a": 4.745724,
-      "voltage_v": 56.78515
+      "voltage_v": 33.70484
     },
     {
       "current_a": 4.779622,
-      "voltage_v": 56.7518
+      "voltage_v": 33.68483
     },
     {
       "current_a": 4.81352,
-      "voltage_v": 56.71829
+      "voltage_v": 33.66472
     },
     {
       "current_a": 4.847418,
-      "voltage_v": 56.68462
+      "voltage_v": 33.64452
     },
     {
       "current_a": 4.881316,
-      "voltage_v": 56.6508
+      "voltage_v": 33.62422
     },
     {
       "current_a": 4.915214,
-      "voltage_v": 56.61681
+      "voltage_v": 33.60382
     },
     {
       "current_a": 4.949112,
-      "voltage_v": 56.58266
+      "voltage_v": 33.58333
     },
     {
       "current_a": 4.98301,
-      "voltage_v": 56.54834
+      "voltage_v": 33.56273
     },
     {
       "current_a": 5.016908,
-      "voltage_v": 56.51385
+      "voltage_v": 33.54204
     },
     {
       "current_a": 5.050806,
-      "voltage_v": 56.47919
+      "voltage_v": 33.52124
     },
     {
       "current_a": 5.084704,
-      "voltage_v": 56.44436
+      "voltage_v": 33.50033
     },
     {
       "current_a": 5.118602,
-      "voltage_v": 56.40935
+      "voltage_v": 33.47932
     },
     {
       "current_a": 5.1525,
-      "voltage_v": 56.37416
+      "voltage_v": 33.45821
     },
     {
       "current_a": 5.186398,
-      "voltage_v": 56.33879
+      "voltage_v": 33.43698
     },
     {
       "current_a": 5.220296,
-      "voltage_v": 56.30323
+      "voltage_v": 33.41564
     },
     {
       "current_a": 5.254194,
-      "voltage_v": 56.26749
+      "voltage_v": 33.39419
     },
     {
       "current_a": 5.288092,
-      "voltage_v": 56.23156
+      "voltage_v": 33.37263
     },
     {
       "current_a": 5.32199,
-      "voltage_v": 56.19543
+      "voltage_v": 33.35094
     },
     {
       "current_a": 5.355888,
-      "voltage_v": 56.15911
+      "voltage_v": 33.32915
     },
     {
       "current_a": 5.389786,
-      "voltage_v": 56.12259
+      "voltage_v": 33.30723
     },
     {
       "current_a": 5.423684,
-      "voltage_v": 56.08586
+      "voltage_v": 33.28519
     },
     {
       "current_a": 5.457582,
-      "voltage_v": 56.04893
+      "voltage_v": 33.26303
     },
     {
       "current_a": 5.49148,
-      "voltage_v": 56.0118
+      "voltage_v": 33.24074
     },
     {
       "current_a": 5.525378,
-      "voltage_v": 55.97445
+      "voltage_v": 33.21833
     },
     {
       "current_a": 5.559276,
-      "voltage_v": 55.93688
+      "voltage_v": 33.19578
     },
     {
       "current_a": 5.593174,
-      "voltage_v": 55.8991
+      "voltage_v": 33.17311
     },
     {
       "current_a": 5.627072,
-      "voltage_v": 55.8611
+      "voltage_v": 33.1503
     },
     {
       "current_a": 5.66097,
-      "voltage_v": 55.82286
+      "voltage_v": 33.12735
     },
     {
       "current_a": 5.694868,
-      "voltage_v": 55.7844
+      "voltage_v": 33.10427
     },
     {
       "current_a": 5.728766,
-      "voltage_v": 55.74571
+      "voltage_v": 33.08105
     },
     {
       "current_a": 5.762664,
-      "voltage_v": 55.70678
+      "voltage_v": 33.05768
     },
     {
       "current_a": 5.796562,
-      "voltage_v": 55.6676
+      "voltage_v": 33.03417
     },
     {
       "current_a": 5.83046,
-      "voltage_v": 55.62819
+      "voltage_v": 33.01051
     },
     {
       "current_a": 5.864358,
-      "voltage_v": 55.58852
+      "voltage_v": 32.9867
     },
     {
       "current_a": 5.898256,
-      "voltage_v": 55.54859
+      "voltage_v": 32.96274
     },
     {
       "current_a": 5.932154,
-      "voltage_v": 55.50841
+      "voltage_v": 32.93863
     },
     {
       "current_a": 5.966052,
-      "voltage_v": 55.46797
+      "voltage_v": 32.91435
     },
     {
       "current_a": 5.99995,
-      "voltage_v": 55.42725
+      "voltage_v": 32.88992
     },
     {
       "current_a": 6.033848,
-      "voltage_v": 55.38627
+      "voltage_v": 32.86532
     },
     {
       "current_a": 6.067747,
-      "voltage_v": 55.345
+      "voltage_v": 32.84055
     },
     {
       "current_a": 6.101645,
-      "voltage_v": 55.30345
+      "voltage_v": 32.81561
     },
     {
       "current_a": 6.135543,
-      "voltage_v": 55.26162
+      "voltage_v": 32.7905
     },
     {
       "current_a": 6.169441,
-      "voltage_v": 55.21949
+      "voltage_v": 32.76522
     },
     {
       "current_a": 6.203339,
-      "voltage_v": 55.17706
+      "voltage_v": 32.73975
     },
     {
       "current_a": 6.237237,
-      "voltage_v": 55.13433
+      "voltage_v": 32.7141
     },
     {
       "current_a": 6.271135,
-      "voltage_v": 55.09128
+      "voltage_v": 32.68826
     },
     {
       "current_a": 6.305033,
-      "voltage_v": 55.04792
+      "voltage_v": 32.66224
     },
     {
       "current_a": 6.338931,
-      "voltage_v": 55.00424
+      "voltage_v": 32.63602
     },
     {
       "current_a": 6.372829,
-      "voltage_v": 54.96022
+      "voltage_v": 32.6096
     },
     {
       "current_a": 6.406727,
-      "voltage_v": 54.91587
+      "voltage_v": 32.58298
     },
     {
       "current_a": 6.440625,
-      "voltage_v": 54.87118
+      "voltage_v": 32.55615
     },
     {
       "current_a": 6.474523,
-      "voltage_v": 54.82614
+      "voltage_v": 32.52911
     },
     {
       "current_a": 6.508421,
-      "voltage_v": 54.78074
+      "voltage_v": 32.50186
     },
     {
       "current_a": 6.542319,
-      "voltage_v": 54.73497
+      "voltage_v": 32.47439
     },
     {
       "current_a": 6.576217,
-      "voltage_v": 54.68883
+      "voltage_v": 32.44669
     },
     {
       "current_a": 6.610115,
-      "voltage_v": 54.64231
+      "voltage_v": 32.41877
     },
     {
       "current_a": 6.644013,
-      "voltage_v": 54.5954
+      "voltage_v": 32.39061
     },
     {
       "current_a": 6.677911,
-      "voltage_v": 54.5481
+      "voltage_v": 32.36221
     },
     {
       "current_a": 6.711809,
-      "voltage_v": 54.50039
+      "voltage_v": 32.33357
     },
     {
       "current_a": 6.745707,
-      "voltage_v": 54.45226
+      "voltage_v": 32.30468
     },
     {
       "current_a": 6.779605,
-      "voltage_v": 54.40371
+      "voltage_v": 32.27553
     },
     {
       "current_a": 6.813503,
-      "voltage_v": 54.35472
+      "voltage_v": 32.24613
     },
     {
       "current_a": 6.847401,
-      "voltage_v": 54.30529
+      "voltage_v": 32.21645
     },
     {
       "current_a": 6.881299,
-      "voltage_v": 54.25541
+      "voltage_v": 32.1865
     },
     {
       "current_a": 6.915197,
-      "voltage_v": 54.20506
+      "voltage_v": 32.15628
     },
     {
       "current_a": 6.949095,
-      "voltage_v": 54.15423
+      "voltage_v": 32.12576
     },
     {
       "current_a": 6.982993,
-      "voltage_v": 54.10292
+      "voltage_v": 32.09495
     },
     {
       "current_a": 7.016891,
-      "voltage_v": 54.0511
+      "voltage_v": 32.06384
     },
     {
       "current_a": 7.050789,
-      "voltage_v": 53.99878
+      "voltage_v": 32.03243
     },
     {
       "current_a": 7.084687,
-      "voltage_v": 53.94592
+      "voltage_v": 32.00069
     },
     {
       "current_a": 7.118585,
-      "voltage_v": 53.89253
+      "voltage_v": 31.96864
     },
     {
       "current_a": 7.152483,
-      "voltage_v": 53.83858
+      "voltage_v": 31.93625
     },
     {
       "current_a": 7.186381,
-      "voltage_v": 53.78407
+      "voltage_v": 31.90351
     },
     {
       "current_a": 7.220279,
-      "voltage_v": 53.72898
+      "voltage_v": 31.87043
     },
     {
       "current_a": 7.254177,
-      "voltage_v": 53.67328
+      "voltage_v": 31.83699
     },
     {
       "current_a": 7.288075,
-      "voltage_v": 53.61697
+      "voltage_v": 31.80318
     },
     {
       "current_a": 7.321973,
-      "voltage_v": 53.56003
+      "voltage_v": 31.76899
     },
     {
       "current_a": 7.355871,
-      "voltage_v": 53.50244
+      "voltage_v": 31.7344
     },
     {
       "current_a": 7.38977,
-      "voltage_v": 53.44419
+      "voltage_v": 31.69942
     },
     {
       "current_a": 7.423668,
-      "voltage_v": 53.38524
+      "voltage_v": 31.66402
     },
     {
       "current_a": 7.457566,
-      "voltage_v": 53.32559
+      "voltage_v": 31.6282
     },
     {
       "current_a": 7.491464,
-      "voltage_v": 53.26521
+      "voltage_v": 31.59194
     },
     {
       "current_a": 7.525362,
-      "voltage_v": 53.20409
+      "voltage_v": 31.55522
     },
     {
       "current_a": 7.55926,
-      "voltage_v": 53.14218
+      "voltage_v": 31.51804
     },
     {
       "current_a": 7.593158,
-      "voltage_v": 53.07948
+      "voltage_v": 31.48038
     },
     {
       "current_a": 7.627056,
-      "voltage_v": 53.01596
+      "voltage_v": 31.44223
     },
     {
       "current_a": 7.660954,
-      "voltage_v": 52.95159
+      "voltage_v": 31.40356
     },
     {
       "current_a": 7.694852,
-      "voltage_v": 52.88634
+      "voltage_v": 31.36437
     },
     {
       "current_a": 7.72875,
-      "voltage_v": 52.82019
+      "voltage_v": 31.32463
     },
     {
       "current_a": 7.762648,
-      "voltage_v": 52.7531
+      "voltage_v": 31.28432
     },
     {
       "current_a": 7.796546,
-      "voltage_v": 52.68504
+      "voltage_v": 31.24344
     },
     {
       "current_a": 7.830444,
-      "voltage_v": 52.61598
+      "voltage_v": 31.20194
     },
     {
       "current_a": 7.864342,
-      "voltage_v": 52.54589
+      "voltage_v": 31.15982
     },
     {
       "current_a": 7.89824,
-      "voltage_v": 52.47471
+      "voltage_v": 31.11706
     },
     {
       "current_a": 7.932138,
-      "voltage_v": 52.40242
+      "voltage_v": 31.07362
     },
     {
       "current_a": 7.966036,
-      "voltage_v": 52.32897
+      "voltage_v": 31.02948
     },
     {
       "current_a": 7.999934,
-      "voltage_v": 52.25433
+      "voltage_v": 30.98462
     },
     {
       "current_a": 8.033832,
-      "voltage_v": 52.17843
+      "voltage_v": 30.939
     },
     {
       "current_a": 8.06773,
-      "voltage_v": 52.10123
+      "voltage_v": 30.8926
     },
     {
       "current_a": 8.101628,
-      "voltage_v": 52.02268
+      "voltage_v": 30.84538
     },
     {
       "current_a": 8.135526,
-      "voltage_v": 51.94272
+      "voltage_v": 30.79731
     },
     {
       "current_a": 8.169424,
-      "voltage_v": 51.86129
+      "voltage_v": 30.74835
     },
     {
       "current_a": 8.203322,
-      "voltage_v": 51.77834
+      "voltage_v": 30.69847
     },
     {
       "current_a": 8.23722,
-      "voltage_v": 51.69378
+      "voltage_v": 30.64762
     },
     {
       "current_a": 8.271118,
-      "voltage_v": 51.60754
+      "voltage_v": 30.59576
     },
     {
       "current_a": 8.305016,
-      "voltage_v": 51.51956
+      "voltage_v": 30.54284
     },
     {
       "current_a": 8.338914,
-      "voltage_v": 51.42974
+      "voltage_v": 30.48881
     },
     {
       "current_a": 8.372812,
-      "voltage_v": 51.338
+      "voltage_v": 30.43361
     },
     {
       "current_a": 8.40671,
-      "voltage_v": 51.24423
+      "voltage_v": 30.37719
     },
     {
       "current_a": 8.440608,
-      "voltage_v": 51.14834
+      "voltage_v": 30.31948
     },
     {
       "current_a": 8.474506,
-      "voltage_v": 51.05021
+      "voltage_v": 30.26041
     },
     {
       "current_a": 8.508404,
-      "voltage_v": 50.94972
+      "voltage_v": 30.19992
     },
     {
       "current_a": 8.542302,
-      "voltage_v": 50.84673
+      "voltage_v": 30.1379
     },
     {
       "current_a": 8.5762,
-      "voltage_v": 50.74111
+      "voltage_v": 30.07429
     },
     {
       "current_a": 8.610098,
-      "voltage_v": 50.6327
+      "voltage_v": 30.00898
     },
     {
       "current_a": 8.643996,
-      "voltage_v": 50.52132
+      "voltage_v": 29.94187
     },
     {
       "current_a": 8.677894,
-      "voltage_v": 50.40679
+      "voltage_v": 29.87283
     },
     {
       "current_a": 8.711792,
-      "voltage_v": 50.2889
+      "voltage_v": 29.80175
     },
     {
       "current_a": 8.745691,
-      "voltage_v": 50.16742
+      "voltage_v": 29.72848
     },
     {
       "current_a": 8.779589,
-      "voltage_v": 50.0421
+      "voltage_v": 29.65287
     },
     {
       "current_a": 8.813487,
-      "voltage_v": 49.91267
+      "voltage_v": 29.57473
     },
     {
       "current_a": 8.847385,
-      "voltage_v": 49.77879
+      "voltage_v": 29.49388
     },
     {
       "current_a": 8.881283,
-      "voltage_v": 49.64013
+      "voltage_v": 29.4101
     },
     {
       "current_a": 8.915181,
-      "voltage_v": 49.49629
+      "voltage_v": 29.32313
     },
     {
       "current_a": 8.949079,
-      "voltage_v": 49.34683
+      "voltage_v": 29.2327
     },
     {
       "current_a": 8.982977,
-      "voltage_v": 49.19122
+      "voltage_v": 29.13848
     },
     {
       "current_a": 9.016875,
-      "voltage_v": 49.02888
+      "voltage_v": 29.0401
     },
     {
       "current_a": 9.050773,
-      "voltage_v": 48.85914
+      "voltage_v": 28.93714
     },
     {
       "current_a": 9.084671,
-      "voltage_v": 48.68121
+      "voltage_v": 28.82907
     },
     {
       "current_a": 9.118569,
-      "voltage_v": 48.49417
+      "voltage_v": 28.71531
     },
     {
       "current_a": 9.152467,
-      "voltage_v": 48.2969
+      "voltage_v": 28.59513
     },
     {
       "current_a": 9.186365,
-      "voltage_v": 48.0881
+      "voltage_v": 28.46768
     },
     {
       "current_a": 9.220263,
-      "voltage_v": 47.86614
+      "voltage_v": 28.33188
     },
     {
       "current_a": 9.254161,
-      "voltage_v": 47.62903
+      "voltage_v": 28.18639
     },
     {
       "current_a": 9.288059,
-      "voltage_v": 47.37424
+      "voltage_v": 28.02949
     },
     {
       "current_a": 9.321957,
-      "voltage_v": 47.09851
+      "voltage_v": 27.85891
     },
     {
       "current_a": 9.355855,
-      "voltage_v": 46.79745
+      "voltage_v": 27.67157
     },
     {
       "current_a": 9.389753,
-      "voltage_v": 46.46501
+      "voltage_v": 27.46305
     },
     {
       "current_a": 9.423651,
-      "voltage_v": 46.09231
+      "voltage_v": 27.22672
     },
     {
       "current_a": 9.457549,
-      "voltage_v": 45.66537
+      "voltage_v": 26.95168
     },
     {
       "current_a": 9.491447,
-      "voltage_v": 45.15954
+      "voltage_v": 26.61775
     },
     {
       "current_a": 9.525345,
-      "voltage_v": 44.52206
+      "voltage_v": 26.17914
     },
     {
       "current_a": 9.559243,
-      "voltage_v": 43.58227
+      "voltage_v": 25.47683
     },
     {
       "current_a": 9.593141,
-      "voltage_v": 34.47474
+      "voltage_v": 16.66787
     },
     {
       "current_a": 9.627039,
-      "voltage_v": 33.85661
+      "voltage_v": 16.46339
     },
     {
       "current_a": 9.660937,
-      "voltage_v": 32.86696
+      "voltage_v": 16.21746
     },
     {
       "current_a": 9.694835,
-      "voltage_v": 23.97044
+      "voltage_v": 15.90449
     },
     {
       "current_a": 9.728733,
-      "voltage_v": 23.38166
+      "voltage_v": 15.45936
     },
     {
       "current_a": 9.762631,
-      "voltage_v": 22.31516
+      "voltage_v": 14.57426
     },
     {
       "current_a": 9.796529,
-      "voltage_v": 13.70133
+      "voltage_v": 6.20732
     },
     {
       "current_a": 9.830427,
-      "voltage_v": 13.16251
+      "voltage_v": 6.05836
     },
     {
       "current_a": 9.864325,
-      "voltage_v": 11.96146
+      "voltage_v": 5.86834
     },
     {
       "current_a": 9.898223,
-      "voltage_v": 3.77497
+      "voltage_v": 5.60497
     },
     {
       "current_a": 9.932121,
-      "voltage_v": 3.34118
+      "voltage_v": 5.17118
     },
     {
       "current_a": 9.966019,
-      "voltage_v": 1.81835
+      "voltage_v": 3.64835
     },
     {
       "current_a": 9.999917,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     },
     {
       "current_a": 10.033815,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     },
     {
       "current_a": 10.067713,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     },
     {
       "current_a": 10.101612,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     },
     {
       "current_a": 10.13551,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     },
     {
       "current_a": 10.169408,
-      "voltage_v": -5.49
+      "voltage_v": -3.66
     }
   ],
-  "reference_irradiance_w_m2": 773
+  "reference_irradiance_w_m2": 720
 }

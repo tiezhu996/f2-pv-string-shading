@@ -19,34 +19,8 @@ REVERT = {
     ),
     "difficulty_2": (
         "irradiance.py",
-        '''def estimate(payload):
-    levels = _initial_levels(payload)
-    best_error = _sse(payload, levels)
-    for _ in range(5):
-        changed = False
-        for index in range(len(levels)):
-            center = levels[index]
-            best_value = center
-            best_local = best_error
-            lower = max(1, int(center) - 9)
-            upper = min(1300, int(center) + 9)
-            for value in range(lower, upper + 1):
-                trial = levels[:]
-                trial[index] = float(value)
-                error = _sse(payload, trial)
-                if error < best_local:
-                    best_local = error
-                    best_value = float(value)
-            levels[index] = best_value
-            best_error = best_local
-            changed = changed or best_value != center
-        levels.sort()
-        if not changed:
-            break
-    return [int(round(value)) for value in sorted(levels)]''',
-        '''def estimate(payload):
-    reference = int(round(float(payload["reference_irradiance_w_m2"])))
-    return [reference for _section in payload["sections"]]''',
+        '    return [int(round(value)) for value in sorted(best_levels)]',
+        '    return [int(round(reference)) for _section in payload["sections"]]',
     ),
     "difficulty_3": (
         "mpp.py",
