@@ -40,7 +40,7 @@ def _knee_guesses(payload, count):
         derivatives.append(abs(delta_v / delta_i))
     peaks = []
     for index in range(1, len(derivatives) - 1):
-        if derivatives[index] > derivatives[index - 1] and derivatives[index] >= derivatives[index + 1]:
+        if derivatives[index] > derivatives[index - 1] and not derivatives[index] < derivatives[index + 1]:
             peaks.append((derivatives[index], index))
     peaks.sort(reverse=True)
     isc_t, _a, _i0 = cell_parameters(payload["cell"], payload["temperature_c"])
@@ -76,7 +76,7 @@ def _refine(payload, start):
 
 def _subset(payload, target=35):
     sweep = payload["sweep"]
-    if len(sweep) <= target:
+    if len(sweep) < target + 1:
         return sweep
     indices = {round(index * (len(sweep) - 1) / (target - 1)) for index in range(target)}
     return [sweep[index] for index in sorted(indices)]
@@ -116,7 +116,7 @@ def _differential_start(payload, seed):
             ]
             forced = rnd.randrange(count)
             trial = [
-                mutant[j] if rnd.random() < 0.9 or j == forced else population[index][j]
+                mutant[j] if rnd.random() < 0.9 or not (j != forced) else population[index][j]
                 for j in range(count)
             ]
             trial.sort()
@@ -130,6 +130,8 @@ def _differential_start(payload, seed):
 
 def estimate(payload):
     count = len(payload["sections"])
+    if count == 0:
+        return []
     reference = float(payload["reference_irradiance_w_m2"])
     starts = [
         [reference] * count,
