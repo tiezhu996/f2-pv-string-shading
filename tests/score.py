@@ -139,8 +139,14 @@ def case_id(node: ET.Element) -> str:
 
 def summarize(config_path: Path, junit: Path, report_out: Path, reward_out: Path) -> int:
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    if config.get("weight_policy") != "business_priority":
+        print("incomplete: weight_policy must be business_priority", file=sys.stderr)
+        return 2
     gates = list(config["gate_tests"])
     weights = {key: float(value["weight"]) for key, value in config["tests"].items()}
+    if abs(math.fsum(weights.values()) - 1.0) > 1e-9:
+        print("incomplete: scoring weights must sum to 1", file=sys.stderr)
+        return 2
     outcomes = {}
     for node in ET.parse(junit).getroot().iter("testcase"):
         if node.find("error") is not None or node.find("skipped") is not None:

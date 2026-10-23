@@ -5,14 +5,42 @@
     "test_outputs.py::test_unknown_kind_or_missing_argument_exits_2"
   ],
   "tests": {
-    "test_outputs.py::test_bifacial_gain_changes_bypass_state": {"weight": 0.14, "rationale": "难点1 旁路状态：双面增益改变有效辐照度，难点合计 0.40"},
-    "test_outputs.py::test_temperature_corrected_current_at_knee": {"weight": 0.13, "rationale": "难点1 旁路状态：临近膝点的温度修正，难点合计 0.40"},
-    "test_outputs.py::test_hot_module_boundary_uses_isc_coefficient": {"weight": 0.13, "rationale": "难点1 旁路状态：高温工况下的电流系数，难点合计 0.40"},
-    "test_outputs.py::test_three_irradiance_levels_are_recovered": {"weight": 0.10, "rationale": "难点2 辐照度反演：三个分离层级，难点合计 0.30"},
-    "test_outputs.py::test_close_levels_near_bypass_knees_are_resolved": {"weight": 0.10, "rationale": "难点2 辐照度反演：相邻层级与旁路膝点，难点合计 0.30"},
-    "test_outputs.py::test_alternating_dark_and_bright_levels_are_recovered": {"weight": 0.10, "rationale": "难点2 辐照度反演：明暗交替且层级多，难点合计 0.30"},
-    "test_outputs.py::test_single_curve_interior_maximum": {"weight": 0.10, "rationale": "难点3 全局MPP：单曲线区间内极值，难点合计 0.30"},
-    "test_outputs.py::test_parallel_misaligned_curves_share_one_voltage": {"weight": 0.10, "rationale": "难点3 全局MPP：多组串共享电压，难点合计 0.30"},
-    "test_outputs.py::test_interior_vertex_beats_all_scan_points": {"weight": 0.10, "rationale": "难点3 全局MPP：区间顶点、限流边界与扫描点共同决定可行最优值，难点合计 0.30"}
-  }
+    "test_outputs.py::test_bifacial_gain_changes_bypass_state": {
+      "weight": 0.14,
+      "rationale": "难点1 旁路状态：双面增益改变有效辐照度，难点合计 0.40"
+    },
+    "test_outputs.py::test_temperature_corrected_current_at_knee": {
+      "weight": 0.13,
+      "rationale": "难点1 旁路状态：临近膝点的温度修正，难点合计 0.40"
+    },
+    "test_outputs.py::test_hot_module_boundary_uses_isc_coefficient": {
+      "weight": 0.13,
+      "rationale": "难点1 旁路状态：高温工况下的电流系数，难点合计 0.40"
+    },
+    "test_outputs.py::test_three_irradiance_levels_are_recovered": {
+      "weight": 0.1,
+      "rationale": "难点2 辐照度反演：三个分离层级，难点合计 0.30"
+    },
+    "test_outputs.py::test_close_levels_near_bypass_knees_are_resolved": {
+      "weight": 0.1,
+      "rationale": "难点2 辐照度反演：相邻层级与旁路膝点，难点合计 0.30"
+    },
+    "test_outputs.py::test_alternating_dark_and_bright_levels_are_recovered": {
+      "weight": 0.1,
+      "rationale": "难点2 辐照度反演：明暗交替且层级多，难点合计 0.30"
+    },
+    "test_outputs.py::test_single_curve_interior_maximum": {
+      "weight": 0.1,
+      "rationale": "难点3 全局MPP：单曲线区间内极值，难点合计 0.30"
+    },
+    "test_outputs.py::test_parallel_misaligned_curves_share_one_voltage": {
+      "weight": 0.1,
+      "rationale": "难点3 全局MPP：多组串共享电压，难点合计 0.30"
+    },
+    "test_outputs.py::test_interior_vertex_beats_all_scan_points": {
+      "weight": 0.1,
+      "rationale": "难点3 全局MPP：区间顶点、限流边界与扫描点共同决定可行最优值，难点合计 0.30"
+    }
+  },
+  "weight_policy": "business_priority"
 }
